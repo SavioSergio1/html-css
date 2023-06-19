@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela 1</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+
+        }
+
+        header, nav, main{
+            background-color: rgb(158, 210, 255);
+            margin: 3px;
+        }
+
+        body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3px;
+        flex: 1 1 100vw;
+        
+        }
+
+        header {
+        flex: 1 1 100vw;
+        height: 70px;
+        }
+
+        nav {
+        flex: 1 1 0px;
+        height: calc(100vh - 18px);
+        }
+
+        main {
+        flex: 1 1 500px;
+        height: calc(100vh - 88px);
+        }
+
+        @media screen and (max-width: 768px){
+    body{
+        background-image: url(pics/Logo1.png);
+        background-size: cover;
+    }
+
+    header {
+        order: 0;
+        display: flex;
+        flex: 1 1 100vw;
+        height: 70px;
+        position: static;
+        }
+
+    nav {
+        order: 1;
+        flex: 1 1 100vw;
+        display: flex;
+        height: 100px;
+        position: static;
+        }
+
+    main {
+        order: 2;
+        display: flex;
+        flex: 1 1 500px;
+        height: calc(100vh - 188px);
+        position: static;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <Header>
+        <h1>
+            Cabeçalho
+        </h1>
+    </Header>
+    <nav>
+        <a href="#">&#9989</a>
+        <a href="#">botão2</a>
+        <a href="#">Botão3</a>
+        <a href="#">Botão4</a>
+    </nav>
+    <main>
+        <div>
+            <p>
+                Caixa de login
+            </p>
+        </div>
+    </main>
+</body>
+</html>

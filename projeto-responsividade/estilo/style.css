@@ -1,0 +1,232 @@
+    :root{
+        --cor0: #fbe1aa;
+        --cor1: #5373ad;
+        --cor2: #aac6fa;
+        --cor21: #aac6fa80;
+        --cor3: #3E3D45;
+        --cor4: #24395E;
+        --cor5: #C7DBFF;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Advent Pro', sans-serif;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+  
+      #container {
+        display: flex;
+        height: 100%;
+      }
+  
+      nav {
+        width: 110px;
+        background-color: var(--cor2);
+        padding: 20px;
+      }
+      
+      .menu-lateral {
+        width: 110px;
+        height: 100%;
+        background-color: var(--cor2);
+        padding: 40px 0 20px 1%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px;
+    
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        z-index: 5;
+    }
+    
+    nav.menu-lateral:hover {
+        width: 200px;
+    
+    }
+    
+    .expandir {
+        width: 100%;
+        padding-left: 13px;
+        margin-bottom: 50px;
+    }
+    
+    .expandir>i {
+        color: black;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .expandir>i:hover {
+        background: #AAC6FA;
+        opacity: 0.2;
+    }
+    
+    .material-symbols-outlined {
+        font-size: 35px !important;
+    }
+    
+    ul {
+        height: 100%;
+        list-style-type: none;
+    }
+    
+    ul li.op-menu {
+        transition: 0.3s;
+    }
+    
+    ul li.op-menu:hover {
+        background: #AAC6FA;
+        opacity: 0.2;
+    
+    }
+    
+    ul li.op-menu a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 18px 26px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 0.5rem;
+    }
+    
+    ul li.op-menu a .texto {
+        margin-left: 50px;
+    }
+    
+    ul li.op-menu a .icone>i {
+        font-size: 30px;
+        margin-left: 10px;
+    
+    }
+    
+    ul li.logout {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .start_button {
+        width: 200px;
+        padding: 16px 20px;
+        border-radius: 30px;
+        background-color: #FBE1AA;
+        font-size: 20px;
+        margin-top: 32px;
+    }
+    
+    .start_button a {
+        text-decoration: none;
+        color: black;
+    }
+
+    header main{
+        flex: 1;
+    }
+      header {
+        background-color: var(--cor21);
+        color: #fff;
+        padding: 20px;
+      }
+  
+      main {
+        background-image: linear-gradient(180deg, var(--cor1), var(--cor2), #ffff );
+        position: relative;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+
+      article{
+         position: absolute;
+        height: 55vh;
+        width: 28vw;
+        background-color: var(--cor0);
+        background-size: 100% 100%;
+
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+      }
+
+    form {
+        padding: 15px;
+    }
+    
+    form>input[type=submit] {
+        display: block;
+        width: 40%;
+        padding: 5px 15px;
+        margin: auto;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+    
+    }
+    
+    .card {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(83, 115, 173, 0.5);
+        border: 1px solid black;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    .card>h1 {
+        margin: 20px;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    
+    .textfield {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .textfield>input {
+        width: 215px;
+        height: 45px;
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 12pt;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+    .textfield>input::placeholder {
+        color: black;
+    }
+    
+    .textfield input {
+        background-color: rgba(83, 115, 173, 0.5);
+    }
